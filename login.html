@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-900 text-lighter">
+    <div class="grid justify-center items-center min-h-screen">
+      <div class="login max-w-3xl p-10">
+        <h1 class="text-5xl font-bold uppercase mb-16">Log in</h1>
+        <form>
+          <div class="mb-3">
+            <label class="mb-2.5 inline-block" for="username">Username</label>
+            <input
+              class="w-full border border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+              type="text"
+              name="username"
+            />
+          </div>
+          <div>
+            <label class="mb-2.5 inline-block" for="password">Password</label>
+            <input
+              class="w-full border border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+              type="password"
+              name="password"
+            />
+          </div>
+          <div class="mt-9">
+            <button
+              type="submit"
+              class="bg-purple-custom text-sm uppercase text-white w-full inline-block py-2.5 rounded-xl"
+            >
+              Log in
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

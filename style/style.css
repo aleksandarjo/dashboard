@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-purple-custom text-sm text-white uppercase font-semibold rounded-xl px-8 py-2.5;
+  }
+}
+
+.login {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 16px 0 rgba(195, 115, 255, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+}

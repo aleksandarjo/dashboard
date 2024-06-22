@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="style/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-900 text-lighter">
+    <div class="grid grid-cols-1 grid-rows-[auto_1fr] min-h-screen">
+      <header
+        class="border-b w-full border-slate-400 flex justify-between items-center px-10 py-5"
+      >
+        <a href="#">Logo</a>
+        <form action="#">
+          <input
+            type="text"
+            class="min-w-72 border border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+            placeholder="Search..."
+          />
+        </form>
+        <div class="relative w-8 h-8">
+          <img
+            class="rounded-full cursor-pointer"
+            src="assets/images/profile.png"
+            alt="avatar"
+          />
+          <article
+            class="absolute -left-20 hidden -bottom-40 text-center bg-slate-800 p-5"
+          >
+            <img
+              class="rounded-full w-10 h-10 block mx-auto"
+              src="assets/images/profile.png"
+              alt="avatar"
+            />
+            <h3 class="text-md">Korisnik</h3>
+            <button
+              class="mt-2.5 bg-slate-600 text-sm uppercase w-full text-white"
+            >
+              Log out
+            </button>
+          </article>
+        </div>
+      </header>
+
+      <main class="grid grid-cols-[250px_1fr]">
+        <nav class="border-r border-slate-400">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </nav>
+
+        <section class="p-5">
+          <h1 class="text-title text-3xl font-bold">Customers</h1>
+
+          <div class="grid grid-cols-[400px_1fr] items-end gap-5 mt-5 mb-10">
+            <div>
+              <input
+                class="w-full border mt-2.5 border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+                type="text"
+                placeholder="Search products"
+              />
+            </div>
+            <div class="text-right">
+              <a href="add-product.html" class="btn inline-block"
+                >Add product</a
+              >
+            </div>
+          </div>
+
+          <table class="table-auto w-full border-collapse">
+            <thead>
+              <tr>
+                <th class="text-center border p-2">
+                  <input type="checkbox" class="accent-purple-custom" />
+                </th>
+                <th class="text-left border p-2 uppercase">Customer</th>
+                <th class="text-left border p-2 uppercase">Email</th>
+                <th class="text-left border p-2 uppercase">Place of order</th>
+                <th class="text-left border p-2 uppercase">Product</th>
+                <th class="text-left border p-2 uppercase">Price</th>
+                <th class="text-left border p-2 uppercase">City</th>
+                <th class="text-left border p-2 uppercase">Status</th>
+                <th class="text-left border p-2 uppercase">Order info</th>
+                <th class="text-left border p-2 uppercase">Order date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="group">
+                <td class="border p-2 text-center">
+                  <input type="checkbox" class="accent-purple-custom" />
+                </td>
+                <td class="border p-2">Pero Peric</td>
+                <td class="border p-2 text-purple-custom">
+                  <a href="mailto:pero_peric69@gmail.com">
+                    pero_peric69@gmail.com</a
+                  >
+                </td>
+                <td class="border p-2">Website</td>
+                <td class="border p-2">Memory Book</td>
+                <td class="border p-2">12€</td>
+                <td class="border p-2">Subotica</td>
+                <td class="border p-2">Ready for shipping</td>
+                <td class="border p-2">Podaci iz kontakt forme za slanje</td>
+                <td class="border p-2">12 Nov 2024, 13:30</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="flex items-center justify-between mt-2.5">
+            <p class="text-sm">1 to 15 items of 100</p>
+            <div class="flex items-center gap-5">
+              <button class="text-sm">Previous</button>
+              <button class="text-sm">Next</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

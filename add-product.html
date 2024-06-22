@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-900 text-lighter">
+    <div class="grid grid-cols-1 grid-rows-[auto_1fr] min-h-screen">
+      <header
+        class="border-b w-full border-slate-400 flex justify-between items-center px-10 py-5"
+      >
+        <a href="#">Logo</a>
+        <form action="#">
+          <input
+            type="text"
+            class="min-w-72 border border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+            placeholder="Search..."
+          />
+        </form>
+        <div class="relative w-8 h-8">
+          <img
+            class="rounded-full cursor-pointer"
+            src="assets/images/profile.png"
+            alt="avatar"
+          />
+          <article
+            class="absolute -left-20 hidden -bottom-40 text-center bg-slate-800 p-5"
+          >
+            <img
+              class="rounded-full w-10 h-10 block mx-auto"
+              src="assets/images/profile.png"
+              alt="avatar"
+            />
+            <h3 class="text-md">Korisnik</h3>
+            <button
+              class="mt-2.5 bg-slate-600 text-sm uppercase w-full text-white"
+            >
+              Log out
+            </button>
+          </article>
+        </div>
+      </header>
+
+      <main class="grid grid-cols-[250px_1fr]">
+        <nav class="border-r border-slate-400">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </nav>
+
+        <section class="p-5">
+          <form>
+            <div class="mb-10 flex justify-between items-end">
+              <div>
+                <h1 class="text-title text-3xl font-bold">Add product</h1>
+                <p class="text-sm">Orders placed across your store</p>
+              </div>
+              <div>
+                <button class="btn">Publish product</button>
+              </div>
+            </div>
+            <div>
+              <label for="product-title">Product Title</label>
+              <input
+                class="w-full border mt-2.5 border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+                type="text"
+                name="product-title"
+              />
+            </div>
+            <div class="mt-5">
+              <label for="product-desc">Product Description</label>
+              <textarea
+                class="w-full border mt-2.5 border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+                type="text"
+                rows="5"
+                cols="5"
+              ></textarea>
+            </div>
+            <div class="mt-5">
+              <label for="product-desc">Display Images</label>
+              <div
+                class="w-full relative border mt-2.5 border-slate-300 rounded-xl text-sm text-darker bg-transparent outline-none"
+              >
+                <p
+                  class="text-lg absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
+                  Browse images from device
+                </p>
+                <input
+                  class="opacity-0 w-full p-20 cursor-pointer"
+                  type="file"
+                  multiple
+                  rows="5"
+                  cols="5"
+                />
+              </div>
+            </div>
+            <div class="flex items-center gap-5 mt-10">
+              <div>
+                <label for="regular-price">Regular price</label>
+                <input
+                  class="border block mt-2.5 border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+                  type="text"
+                  name="regular-price"
+                  placeholder="$$$"
+                />
+              </div>
+              <div>
+                <label for="sale-price">Sale price</label>
+                <input
+                  class="block border mt-2.5 border-slate-300 rounded-xl ps-3 text-sm text-darker bg-transparent outline-none py-1"
+                  type="text"
+                  name="sale-price"
+                  placeholder="$$$"
+                />
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
